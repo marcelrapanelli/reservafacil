@@ -15,7 +15,7 @@ public class Main {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Bobson");
         accs.add(a1);
         accs.add(a2);
 

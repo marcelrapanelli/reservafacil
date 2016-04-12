@@ -21,7 +21,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Bobson");
 
         accs.add(a1);
         accs.add(a2);
@@ -35,7 +35,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Felipe");
 
         accs.add(a1);
         accs.add(a2);
@@ -63,7 +63,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Karina");
 
         accs.add(a1);
         accs.add(a2);
@@ -77,7 +77,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Felicia");
 
         accs.add(a1);
         accs.add(a2);
@@ -91,7 +91,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Livia");
 
         accs.add(a1);
         accs.add(a2);
@@ -105,7 +105,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Mayquel");
 
         accs.add(a1);
         accs.add(a2);
@@ -119,7 +119,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Bruna");
 
         accs.add(a1);
         accs.add(a2);
@@ -133,7 +133,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Nicoly");
 
         accs.add(a1);
         accs.add(a2);
@@ -147,7 +147,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Luna");
 
         accs.add(a1);
         accs.add(a2);
@@ -161,7 +161,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Fabiana");
 
         accs.add(a1);
         accs.add(a2);
@@ -175,7 +175,7 @@ public class TransferTest {
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Mariana");
 
         accs.add(a1);
         accs.add(a2);
@@ -184,17 +184,18 @@ public class TransferTest {
         Assert.assertEquals(t1.getTransferTax(), 10 , 0);
     }
 
+    @Test
     public void checkTaxCalcD3(){
         List<Account> accs = new ArrayList<>();
 
         Account a1 = new Account("180232-22", "38286539877", "Marcel");
-        Account a2 = new Account("935427-03", "68579254803", "Luana");
+        Account a2 = new Account("935427-03", "68579254803", "Jackson");
 
         accs.add(a1);
         accs.add(a2);
 
-        Transfer t1 = new Transfer(accs.get(0).getAccountNumber(), accs.get(1).getAccountNumber(), 125000, formatDate(new Date(), "26 04 2016"), 'D');
-        Assert.assertEquals(t1.getTransferTax(), 125000*0.054 , 0);
+        Transfer t1 = new Transfer(accs.get(0).getAccountNumber(), accs.get(1).getAccountNumber(), 125000, formatDate(new Date(), "21 06 2016"), 'D');
+        Assert.assertEquals(t1.getTransferTax(), 125000*0.012 , 0);
     }
 
     //Necessary
