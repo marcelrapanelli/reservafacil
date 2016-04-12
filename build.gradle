@@ -1,0 +1,12 @@
+apply plugin:'java'
+apply plugin:'application'
+
+mainClassName = 'com.company.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'junit:junit:4.12'
+}
